@@ -16,13 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999987" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gradient-background-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ikD-fh-Bdl">
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999987" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Gradient-background-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ikD-fh-Bdl">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="480" height="640"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-160" y="-248" width="640" height="1136"/>
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Amazing" textAlignment="center" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="N5d-B6-qZG">
@@ -95,15 +92,14 @@
                                     <action selector="ReturnKeyButton:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="Ze0-nn-Hnl"/>
                                 </connections>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gradient-background-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="5xE-Z5-BEo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Gradient-background-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="5xE-Z5-BEo">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="480" height="599"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="-58" y="-365" width="640" height="1137"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
