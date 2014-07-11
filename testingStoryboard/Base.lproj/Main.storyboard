@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" tag="-2" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999987" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gradient-background-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ikD-fh-Bdl">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="640"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-160" y="-248" width="640" height="1136"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Amazing" textAlignment="center" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="N5d-B6-qZG">
+                                <rect key="frame" x="137" y="208" width="206" height="64"/>
+                                <color key="tintColor" red="0.47058823700000002" green="0.27843138579999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="54"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="ReturnKeyButton:" destination="dkx-z0-nzr" eventType="editingDidEndOnExit" id="Rx3-bt-nPt"/>
+                                    <action selector="ReturnKeyButton:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="f0k-Zq-asm"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.25098040699958801" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="N5d-B6-qZG" secondAttribute="centerX" id="477-ka-QXd"/>
+                            <constraint firstAttribute="centerY" secondItem="N5d-B6-qZG" secondAttribute="centerY" id="NeG-5n-Tyj"/>
+                            <constraint firstAttribute="centerX" secondItem="ikD-fh-Bdl" secondAttribute="centerX" id="bhH-BB-lwf"/>
+                            <constraint firstAttribute="centerY" secondItem="ikD-fh-Bdl" secondAttribute="centerY" id="nmM-lh-xWW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bhH-BB-lwf"/>
+                                <exclude reference="nmM-lh-xWW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="bhH-BB-lwf"/>
+                                <include reference="nmM-lh-xWW"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ntZ-9C-sYO" appends="YES" id="O3I-wK-ySK"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="ntZ-9C-sYO">
+                    <connections>
+                        <segue destination="Nxy-FH-cCC" kind="presentation" animates="NO" id="dDI-fB-epg"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="262" y="174"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vkz-je-3bw">
+            <objects>
+                <viewController id="Nxy-FH-cCC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gzg-X7-OY0"/>
+                        <viewControllerLayoutGuide type="bottom" id="uqV-fS-YIv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VZI-ix-Hgv">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Amazing" textAlignment="center" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="X1f-4b-NfM">
+                                <rect key="frame" x="137" y="208" width="206" height="64"/>
+                                <color key="tintColor" red="0.47058823700000002" green="0.27843138579999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="54"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="ReturnKeyButton:" destination="xCB-gR-KtC" eventType="editingDidEndOnExit" id="DTD-UI-561"/>
+                                    <action selector="ReturnKeyButton:" destination="dkx-z0-nzr" eventType="editingDidEndOnExit" id="Ksk-75-M7w"/>
+                                    <action selector="ReturnKeyButton:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="Ze0-nn-Hnl"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gradient-background-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="5xE-Z5-BEo">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="599"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="-58" y="-365" width="640" height="1137"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="5xE-Z5-BEo" secondAttribute="centerY" constant="36.5" id="65Y-Uq-JQF"/>
+                            <constraint firstAttribute="centerX" secondItem="X1f-4b-NfM" secondAttribute="centerX" id="b48-LZ-qD5"/>
+                            <constraint firstAttribute="centerX" secondItem="5xE-Z5-BEo" secondAttribute="centerX" constant="-22" id="nFM-eS-pCE"/>
+                            <constraint firstAttribute="centerY" secondItem="X1f-4b-NfM" secondAttribute="centerY" id="x8h-zb-UOh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="65Y-Uq-JQF"/>
+                                <exclude reference="nFM-eS-pCE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="65Y-Uq-JQF"/>
+                                <include reference="nFM-eS-pCE"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ntZ-9C-sYO" appends="YES" id="2rS-lq-DQc"/>
+                            <outletCollection property="gestureRecognizers" destination="lze-wH-ciU" appends="YES" id="DSK-I6-ZVW"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCB-gR-KtC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="lze-wH-ciU">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" id="CQ9-qx-7HK"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1018.5" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gradient-background-1.png" width="640" height="1136"/>
+        <image name="Gradient-background-2.png" width="640" height="1136"/>
+    </resources>
+</document>
