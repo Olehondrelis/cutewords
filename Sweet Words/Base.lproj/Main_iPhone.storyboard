@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="G6R-zB-R6C">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="g4K-H2-15m">
+            <objects>
+                <viewController id="G6R-zB-R6C" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uk9-m1-d4V"/>
+                        <viewControllerLayoutGuide type="bottom" id="lgf-Ne-VWA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="thI-ft-ivG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Amazing" textAlignment="center" minimumFontSize="40" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="J1O-rx-c3F">
+                                <rect key="frame" x="58" y="218" width="204" height="68"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="54"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="ReturnKeyButton:" destination="MSJ-dK-1dl" eventType="editingDidEndOnExit" id="nIy-FV-kkc"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="HRQ-LO-E4I" appends="YES" id="KUT-Kd-8K0"/>
+                            <outletCollection property="gestureRecognizers" destination="G0j-ld-l0m" appends="YES" id="BU1-hm-la0"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MSJ-dK-1dl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="HRQ-LO-E4I">
+                    <connections>
+                        <segue destination="arP-QZ-FF3" kind="modal" modalTransitionStyle="partialCurl" animates="NO" id="HF4-fa-FOQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="G0j-ld-l0m">
+                    <connections>
+                        <segue destination="maN-0u-IEI" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="mdw-ap-14G"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-434" y="511"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4tm-IT-XzR">
+            <objects>
+                <viewController id="arP-QZ-FF3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IvE-Sa-GEC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ukf-I0-PcN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z7p-Hm-5yo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Beautiful" textAlignment="center" minimumFontSize="40" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uaC-dD-KfE">
+                                <rect key="frame" x="58" y="218" width="204" height="68"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="54"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="ReturnKeyButton:" destination="FbW-mX-YY0" eventType="editingDidEndOnExit" id="Na5-63-evE"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WLf-Q9-p9a" appends="YES" id="SJ4-5m-HrZ"/>
+                            <outletCollection property="gestureRecognizers" destination="ogG-R1-4VA" appends="YES" id="r9V-gX-nBa"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FbW-mX-YY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="WLf-Q9-p9a">
+                    <connections>
+                        <segue destination="GCt-0I-ou2" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="0bI-Fp-Um8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="ogG-R1-4VA">
+                    <connections>
+                        <segue destination="G6R-zB-R6C" kind="modal" animates="NO" id="re0-v3-wHy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-73" y="511"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oBA-nn-b0R">
+            <objects>
+                <viewController id="GCt-0I-ou2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eos-7p-nxm"/>
+                        <viewControllerLayoutGuide type="bottom" id="IvN-kz-bm0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a7Q-W1-2c4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cute" textAlignment="center" minimumFontSize="40" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="24I-p8-Rl2">
+                                <rect key="frame" x="58" y="218" width="204" height="68"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="54"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="ReturnKeyButton:" destination="XkZ-4K-69W" eventType="editingDidEndOnExit" id="DTA-dS-Avx"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.28627450980392155" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="9R7-gE-Diq" appends="YES" id="9rM-l4-XeB"/>
+                            <outletCollection property="gestureRecognizers" destination="jzg-n3-BvU" appends="YES" id="djV-FG-p7r"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XkZ-4K-69W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="9R7-gE-Diq">
+                    <connections>
+                        <segue destination="NUe-a6-HeT" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="tzf-xt-KN3"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="jzg-n3-BvU">
+                    <connections>
+                        <segue destination="arP-QZ-FF3" kind="modal" animates="NO" id="CdK-A7-Fc3"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="277" y="511"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FGd-l3-aiL">
+            <objects>
+                <viewController id="NUe-a6-HeT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f0b-1G-JgI"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZO5-RF-pxi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jQs-VU-UKs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Delightful" textAlignment="center" minimumFontSize="40" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K5b-KL-Qlp">
+                                <rect key="frame" x="58" y="218" width="204" height="68"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="54"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="ReturnKeyButton:" destination="okn-rH-fqn" eventType="editingDidEndOnExit" id="QIJ-gT-NiR"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Igr-t6-mB5" appends="YES" id="v2R-O1-f1i"/>
+                            <outletCollection property="gestureRecognizers" destination="q1n-V2-pij" appends="YES" id="GX6-CN-k7Y"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="okn-rH-fqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="Igr-t6-mB5">
+                    <connections>
+                        <segue destination="NAD-Yj-zen" kind="modal" animates="NO" id="FwL-xU-olZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="q1n-V2-pij">
+                    <connections>
+                        <segue destination="GCt-0I-ou2" kind="modal" animates="NO" id="j28-up-4JA"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="621" y="511"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zqG-py-Vhh">
+            <objects>
+                <viewController id="NAD-Yj-zen" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QVJ-Wz-PTx"/>
+                        <viewControllerLayoutGuide type="bottom" id="nta-0H-0rA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="75I-ZN-jNd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Elegant" textAlignment="center" minimumFontSize="40" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="J86-Jx-fQw">
+                                <rect key="frame" x="58" y="218" width="204" height="68"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="54"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="ReturnKeyButton:" destination="yNj-LM-MNi" eventType="editingDidEndOnExit" id="qBL-0a-fc0"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47058823529411764" green="0.27843137254901962" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XlA-oO-7NN" appends="YES" id="jYA-fr-AgT"/>
+                            <outletCollection property="gestureRecognizers" destination="zjA-oA-D3e" appends="YES" id="1cd-zn-JYE"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yNj-LM-MNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="XlA-oO-7NN">
+                    <connections>
+                        <segue destination="maN-0u-IEI" kind="modal" animates="NO" id="2Gb-HI-hh2"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="zjA-oA-D3e">
+                    <connections>
+                        <segue destination="NUe-a6-HeT" kind="modal" animates="NO" id="Voi-4a-bGI"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="951" y="511"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aTR-4y-2V5">
+            <objects>
+                <viewController id="maN-0u-IEI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3lz-Pm-Kfl"/>
+                        <viewControllerLayoutGuide type="bottom" id="iFs-Ai-de2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="haB-WU-7R2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fantastic" textAlignment="center" minimumFontSize="40" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0Ec-zF-3in">
+                                <rect key="frame" x="58" y="218" width="204" height="68"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="54"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="ReturnKeyButton:" destination="Nar-b3-HkR" eventType="editingDidEndOnExit" id="hvA-uI-WnT"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vLy-oo-m9h" appends="YES" id="yHw-N5-3nP"/>
+                            <outletCollection property="gestureRecognizers" destination="dyj-gb-0vh" appends="YES" id="pfv-s9-zUX"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nar-b3-HkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="vLy-oo-m9h">
+                    <connections>
+                        <segue destination="G6R-zB-R6C" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="mdk-gE-dgh"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="dyj-gb-0vh">
+                    <connections>
+                        <segue destination="NAD-Yj-zen" kind="modal" animates="NO" id="4pe-7b-G6b"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1289" y="511"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Voi-4a-bGI"/>
+        <segue reference="4pe-7b-G6b"/>
+        <segue reference="2Gb-HI-hh2"/>
+        <segue reference="j28-up-4JA"/>
+        <segue reference="CdK-A7-Fc3"/>
+        <segue reference="mdk-gE-dgh"/>
+    </inferredMetricsTieBreakers>
+</document>
