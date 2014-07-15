@@ -34,8 +34,6 @@
 		5BEBC8CB18B906240064FE27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BEBC8AA18B906240064FE27 /* UIKit.framework */; };
 		5BEBC8D318B906240064FE27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BEBC8D118B906240064FE27 /* InfoPlist.strings */; };
 		5BEBC8D518B906240064FE27 /* Sweet_WordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEBC8D418B906240064FE27 /* Sweet_WordsTests.m */; };
-		5BEBC8F318B928020064FE27 /* two_hearts-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BEBC8F118B928020064FE27 /* two_hearts-25.png */; };
-		5BEBC8F418B928020064FE27 /* two_hearts-25@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BEBC8F218B928020064FE27 /* two_hearts-25@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,8 +79,6 @@
 		5BEBC8D018B906240064FE27 /* Sweet WordsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sweet WordsTests-Info.plist"; sourceTree = "<group>"; };
 		5BEBC8D218B906240064FE27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5BEBC8D418B906240064FE27 /* Sweet_WordsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sweet_WordsTests.m; sourceTree = "<group>"; };
-		5BEBC8F118B928020064FE27 /* two_hearts-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "two_hearts-25.png"; path = "../../Tab Bar icons/two_hearts-25.png"; sourceTree = "<group>"; };
-		5BEBC8F218B928020064FE27 /* two_hearts-25@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "two_hearts-25@2x.png"; path = "../../Tab Bar icons/two_hearts-25@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,8 +200,6 @@
 		5BEBC8E018B921A50064FE27 /* Tab Bar Icons */ = {
 			isa = PBXGroup;
 			children = (
-				5BEBC8F118B928020064FE27 /* two_hearts-25.png */,
-				5BEBC8F218B928020064FE27 /* two_hearts-25@2x.png */,
 			);
 			name = "Tab Bar Icons";
 			sourceTree = "<group>";
@@ -297,12 +291,10 @@
 				5BDB26B718C231CA00F43968 /* forward-50.png in Resources */,
 				5BDB26B818C231CA00F43968 /* forward-75.png in Resources */,
 				5BEBC8BD18B906240064FE27 /* Main_iPad.storyboard in Resources */,
-				5BEBC8F418B928020064FE27 /* two_hearts-25@2x.png in Resources */,
 				5BEBC8C218B906240064FE27 /* Images.xcassets in Resources */,
 				5BDB26B418C2319200F43968 /* back-75.png in Resources */,
 				5BEBC8BA18B906240064FE27 /* Main_iPhone.storyboard in Resources */,
 				5BDB26BA18C232F100F43968 /* forward-128.png in Resources */,
-				5BEBC8F318B928020064FE27 /* two_hearts-25.png in Resources */,
 				5BDB26B318C2319200F43968 /* back-50.png in Resources */,
 				5B08FB9018C0B0A700E1159E /* Rektangel-1.png in Resources */,
 				5BDB26B018C223D600F43968 /* Unselected.png in Resources */,
